@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Index</title>
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" type ="text/css" href="Content/styles.css">
+	</head>
+	<body>
+		<Div><table class="title" align="center">
+				<tr>
+					<th class="title">Ahmed's J2EE - Servlet Class</th>
+					<th class="title"><img src="Assets/images/01.gif" alt="image" /></th>
+				</tr>
+				<tr align="left">
+					<th>Week 3</th>
+					<th>Mohammed Ahmed</th>
+				</tr>			
+		</table></Div>
+		<Form>
+			<!-- LECTURES -->
+			<fieldset><legend>Lecture</legend><ul>
+					<li><a href="Lecture1.html">Lecture 1</a> : Simple HTML Page</li>
+					<li><a href="Lecture2.jsp">Lecture 2</a>: Simple JSP Page</li>
+			</ul></fieldset>
+			
+			<!-- Labs and Micro Projects -->
+			<fieldset><legend>Labs and Micro Projects</legend>
+				<ul>
+					<li><a href="ServletText">ServletGeneratesPlainText</a> The Servlet that generates plain text.</li>
+					<li><a href="ServletHtml">ServletGeneratesHtml</a> The Servlet that generates HTML, accessed via the URL given in the @WebServlet annotation in Java source code.</li>
+					<li><a href="ServletBouletRandomNumer">BouletRandomNumer Servlet</a> Servlet that makes a bulleted list of 10 random numbers.</li>
+					<li><a href="ServletTableRowXColY">TableRowXColY Servlet</a> Servlet that uses a loop to output an HTML table with 10 rows and 10 columns.</li>
+					<li><a href="ServletMagicSquare">MagicSquare Servlet</a> Servlet version of the Magic Square.</li>
+					<li><a href="ServletFT2">ServletUsingFilter</a> This Servlet uses the filter Servlet.</li>
+					<li><a href="ColorSizeWeightForm.html">Reading Three Parameters</a></li>
+					<li><a href="RegistrationForm.html">Registration Form</a></li>
+					<li><a href="LorentzForm.html">Lorentz Form</a>: Assignment 3</li>
+					
+				</ul>
+			</fieldset>
+			
+			<!-- Songs -->
+			<fieldset><legend>Songs</legend>
+				<ol>
+					<li><p>The Way I Are by Justin Timberlake.</p>
+						<audio id="myAudio1"><source src="Assets/songs/TheWayIAre.mp3" type="audio/mpeg"></audio>
+						<button onclick="playAudio()" type="button">Play</button>
+						<button onclick="pauseAudio()" type="button">Pause</button>
+						<script>
+							var x = document.getElementById("myAudio1");
+							function playAudio() { x.play(); }
+							function pauseAudio() { x.pause(); }
+						</script>
+					</li>
+					<li><p>Till The World Ends by Britteny Spears.</p>
+						<audio id="myAudio2"><source src="Assets/songs/TillTheWorldEnds.mp3" type="audio/mpeg"></audio>
+						<button onclick="playAudio()" type="button">Play</button>
+						<button onclick="pauseAudio()" type="button">Pause</button>
+						<script>
+							var x = document.getElementById("myAudio2");
+							function playAudio() { x.play(); }
+							function pauseAudio() { x.pause(); }
+						</script>
+					</li>							
+				</ol>
+			</fieldset>
+			
+			<!-- Videos -->
+			<fieldset><legend>Videos</legend>
+				<ol>
+					<li><p>Video1</p>
+						<video id="myVideo1" width="320" height="240" controls>
+							<source src="Assets/videos/movie.mp4" type="video/mp4">
+						</video>
+						
+						<p id="demo"></p>
+						<script>
+							function myFunction() {
+							    var x = document.getElementById("myVideo1").duration;
+							    document.getElementById("demo").innerHTML = x;
+							}
+						</script>
+					</li>
+					<li><p>Video2</p>
+						<video id="myVideo2" width="320" height="240" controls>
+							<source src="Assets/videos/movie2.mp4" type="video/mp4">
+						</video>
+						
+						<p id="demo"></p>
+						<script>
+							function myFunction() {
+							    var x = document.getElementById("myVideo2").duration;
+							    document.getElementById("demo").innerHTML = x;
+							}
+						</script>
+					</li>
+				</ol>
+			</fieldset>
+		</Form>
+	</body>
+</html>
